@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LIVAN Bath Soap | Pure Care. Fresh You.</title>
+<meta name="description" content="LIVAN Bath Soap – natural care, freshness and hygiene from Odisha.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#173d2b;background:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#063d25;color:white;box-shadow:0 3px 16px #0003}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:30px;letter-spacing:-1px}
+.logo-mark{width:46px;height:46px;border-radius:14px;background:linear-gradient(145deg,#79e51d,#08a7df);display:grid;place-items:center;font-size:25px}
+.logo small{display:block;font-size:9px;letter-spacing:4px;color:#b7e95c;margin-top:-6px}
+nav{display:flex;gap:28px;align-items:center}
+nav a{font-weight:700;font-size:15px;opacity:.92}
+nav a:hover{color:#a8ee2e}
+.wa{background:#25d366;padding:12px 18px;border-radius:24px;font-weight:800}
+.menu{display:none;font-size:28px;cursor:pointer}
+
+.hero{min-height:520px;background:
+linear-gradient(90deg,#052d1dcc,#052d1d33),
+radial-gradient(circle at 72% 35%,#d8f5a6 0 8%,transparent 9%),
+linear-gradient(135deg,#0a4d2e,#83bd32 48%,#d8f1c9);
+display:flex;align-items:center;color:white;overflow:hidden}
+.hero-content{width:53%;padding:75px 0}
+.kicker{font-weight:800;letter-spacing:2px;color:#d9ff7c}
+h1{font-size:clamp(44px,6vw,76px);line-height:1.02;margin:14px 0}
+h1 span{color:#a9ef29}
+.hero p{font-size:18px;max-width:560px}
+.buttons{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+.btn{padding:14px 22px;border-radius:28px;font-weight:800;display:inline-block}
+.btn.green{background:#39d42b;color:white}
+.btn.outline{border:2px solid white}
+.soap-visual{width:47%;display:flex;justify-content:center;align-items:center}
+.soap{width:300px;height:180px;border-radius:35px;background:linear-gradient(#fff7dc,#e7d39a);box-shadow:0 25px 45px #0005;transform:rotate(-5deg);display:grid;place-items:center;color:#a98938;font-size:34px;font-weight:900;position:relative}
+.soap:after{content:"LIVAN";position:absolute;inset:62px 35px auto;border:2px solid #c6ad67;border-radius:50%;padding:8px;text-align:center;font-size:25px}
+.leaf{position:absolute;font-size:70px;opacity:.75;top:18%;right:5%}
+
+.section{padding:70px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.eyebrow{color:#43a92b;font-weight:900;letter-spacing:2px}
+h2{font-size:40px;line-height:1.1;margin:7px 0 16px}
+.about-card{background:linear-gradient(135deg,#effbe9,#d5f3d0);border-radius:25px;min-height:320px;display:grid;place-items:center;font-size:90px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}
+.feature{text-align:center;font-weight:800;padding:14px 6px}
+.feature .ico{font-size:31px;display:block;margin-bottom:6px}
+
+.products{background:#f1faef}
+.center{text-align:center}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
+.card{background:white;border-radius:18px;overflow:hidden;box-shadow:0 7px 24px #164b2420}
+.card-img{height:155px;display:grid;place-items:center;font-size:65px}
+.pink{background:linear-gradient(135deg,#ffd2d9,#fff)}
+.lime{background:linear-gradient(135deg,#c9f58a,#f7ffe9)}
+.blue{background:linear-gradient(135deg,#b7e9ff,#f5ffff)}
+.card-body{padding:20px}
+.card h3{font-size:22px}
+.card ul{list-style:none;margin:12px 0}
+.card li{margin:5px 0}.card li:before{content:"✓";color:#31aa32;font-weight:bold;margin-right:7px}
+.small-btn{display:inline-block;background:#08783e;color:white;padding:10px 17px;border-radius:20px;font-weight:800}
+
+.why{background:#063d25;color:white}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;margin-top:30px}
+.why-item{padding:22px;border:1px solid #ffffff22;border-radius:18px}
+.why-item b{display:block;font-size:18px;margin-top:8px;color:#d9ff7c}
+
+.manufacturing{background:#f8fff7}
+.process{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.factory{height:300px;border-radius:24px;background:linear-gradient(150deg,#d9f1ff,#89bde0);display:grid;place-items:center;font-size:90px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}
+.check{font-weight:700}.check span{color:#32a82d;font-size:24px;margin-right:7px}
+
+.contact{background:linear-gradient(135deg,#eaf9e7,#fff)}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;background:white;padding:35px;border-radius:25px;box-shadow:0 8px 30px #164b2420}
+.contact-item{margin:16px 0;font-size:17px}.contact-item b{display:block;color:#08783e}
+form input,form textarea{width:100%;padding:13px;margin:7px 0;border:1px solid #cbdcc9;border-radius:10px;font:inherit}
+form textarea{height:110px;resize:vertical}
+
+footer{background:#032c1b;color:white;padding:40px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+footer h3{color:#b9f25c;margin-bottom:10px}
+.copy{border-top:1px solid #ffffff2b;margin-top:28px;padding-top:15px;font-size:13px;display:flex;justify-content:space-between}
+
+@media(max-width:800px){
+ nav{display:none;position:absolute;top:74px;left:0;right:0;background:#063d25;padding:20px;flex-direction:column;gap:18px}
+ nav.open{display:flex}.menu{display:block}
+ .hero{min-height:auto}.hero-content{width:100%;padding:65px 0 35px}.soap-visual{display:none}
+ .two,.process,.contact-box{grid-template-columns:1fr}
+ .features,.why-grid{grid-template-columns:repeat(2,1fr)}
+ .product-grid{grid-template-columns:1fr}
+ h2{font-size:32px}
+ .footer-grid{grid-template-columns:1fr}
+ .copy{display:block}.copy span{display:block;margin-top:8px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home"><div class="logo-mark">💧</div><div>LIVAN<small>BATH SOAP</small></div></a>
+    <div class="menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</div>
+    <nav>
+      <a href="#home">⌂ Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#manufacturing">Manufacturing</a>
+      <a href="#contact">Contact</a>
+      <a class="wa" href="https://wa.me/917205261048" target="_blank">WhatsApp Us</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container" style="display:flex;align-items:center;width:100%">
+    <div class="hero-content">
+      <div class="kicker">NATURAL &nbsp;|&nbsp; REFRESHING &nbsp;|&nbsp; SAFE</div>
+      <h1>Pure Care<br><span>for Your Skin</span></h1>
+      <p>LIVAN Bath Soap – natural goodness for a healthier, fresher you.</p>
+      <div class="buttons">
+        <a class="btn green" href="#products">Explore Our Products →</a>
+        <a class="btn outline" href="#about">▷ Watch Video</a>
+      </div>
+    </div>
+    <div class="soap-visual"><div class="soap">LIVAN</div></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+<div class="container two">
+  <div>
+    <div class="eyebrow">ABOUT US</div>
+    <h2>LIVAN Bath Soap</h2>
+    <p>LIVAN Bath Soap is a trusted manufacturer of high-quality bath soaps from Odisha. We are committed to bringing natural care, freshness and hygiene to every home.</p>
+    <div class="features">
+      <div class="feature"><span class="ico">🌿</span>Natural<br>Ingredients</div>
+      <div class="feature"><span class="ico">🛡️</span>Skin<br>Friendly</div>
+      <div class="feature"><span class="ico">♡</span>Trusted<br>Quality</div>
+      <div class="feature"><span class="ico">🍃</span>Made in<br>Odisha</div>
+    </div>
+  </div>
+  <div class="about-card">🏭</div>
+</div>
+</section>
+
+<section id="products" class="section products">
+<div class="container">
+  <div class="center"><div class="eyebrow">OUR PRODUCTS</div><h2>Freshness in Every Bar</h2><p>Bath soaps designed for your daily care and freshness.</p></div>
+  <div class="product-grid">
+    <article class="card"><div class="card-img pink">🌹🧼</div><div class="card-body"><h3>LIVAN Bath Soap</h3><p>Gentle care for fresh & clean skin.</p><ul><li>Deep Cleansing</li><li>Moisturizing</li><li>Long Lasting Freshness</li></ul><a class="small-btn" href="#contact">View Details →</a></div></article>
+    <article class="card"><div class="card-img lime">🌿🧼</div><div class="card-body"><h3>Fresh Care</h3><p>Refreshing daily bathing experience.</p><ul><li>Natural Extracts</li><li>Soft & Smooth Skin</li><li>Pleasant Fragrance</li></ul><a class="small-btn" href="#contact">View Details →</a></div></article>
+    <article class="card"><div class="card-img blue">💧🧼</div><div class="card-body"><h3>Clean & Fresh</h3><p>Simple personal care for the whole family.</p><ul><li>Mild & Safe</li><li>Skin Friendly</li><li>Everyday Use</li></ul><a class="small-btn" href="#contact">View Details →</a></div></article>
+  </div>
+</div>
+</section>
+
+<section class="section why">
+<div class="container">
+  <div class="eyebrow">WHY CHOOSE LIVAN?</div><h2>Because your skin deserves the best.</h2>
+  <div class="why-grid">
+    <div class="why-item">🏆<b>Premium Quality</b></div>
+    <div class="why-item">🌿<b>Natural Ingredients</b></div>
+    <div class="why-item">💰<b>Affordable Price</b></div>
+    <div class="why-item">👨‍👩‍👧‍👦<b>Trusted by Families</b></div>
+  </div>
+</div>
+</section>
+
+<section id="manufacturing" class="section manufacturing">
+<div class="container process">
+  <div class="factory">🏭🧼</div>
+  <div>
+    <div class="eyebrow">OUR MANUFACTURING</div><h2>Modern Process. Highest Quality.</h2>
+    <p>We follow strict quality control and hygiene standards in our manufacturing process to ensure every LIVAN soap meets a high level of purity and safety.</p>
+    <div class="checks">
+      <div class="check"><span>✓</span>Hygienic Environment</div>
+      <div class="check"><span>✓</span>Advanced Machinery</div>
+      <div class="check"><span>✓</span>Quality Control</div>
+      <div class="check"><span>✓</span>Consistent Standards</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container center">
+  <div class="eyebrow">WHAT OUR CUSTOMERS SAY</div><h2>Real People. Real Care.</h2>
+  <p>We are happy to be a part of your daily hygiene and confidence.</p>
+  <div class="product-grid" style="margin-top:25px">
+    <div class="card" style="padding:25px">★★★★★<br><br>“LIVAN soap keeps my skin fresh and soft. I love the natural fragrance!”<br><b>— Priya Sahoo</b></div>
+    <div class="card" style="padding:25px">★★★★★<br><br>“Good quality and very gentle on skin. Perfect for my family.”<br><b>— Rakesh Kumar</b></div>
+    <div class="card" style="padding:25px">★★★★★<br><br>“Fresh fragrance and a clean feeling after every bath.”<br><b>— Happy Customer</b></div>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="section contact">
+<div class="container">
+  <div class="center"><div class="eyebrow">CONTACT US</div><h2>Let's Connect</h2></div>
+  <div class="contact-box">
+    <div>
+      <div class="contact-item"><b>📞 Phone</b>7205261048</div>
+      <div class="contact-item"><b>📍 Location</b>Balarampur, Boudh, Odisha</div>
+      <div class="contact-item"><b>✉ Email</b>livanbathsoap@gmail.com</div>
+      <a class="btn green" href="https://wa.me/917205261048" target="_blank">Chat on WhatsApp →</a>
+    </div>
+    <form onsubmit="event.preventDefault();alert('Thank you! Please contact us by phone or WhatsApp to complete your enquiry.');">
+      <input required placeholder="Your Name">
+      <input required type="tel" placeholder="Phone Number">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button class="btn green" type="submit" style="border:0;cursor:pointer">Send Enquiry →</button>
+    </form>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+  <div class="footer-grid">
+    <div><div class="logo">💧 LIVAN</div><p>Pure Care. Fresh You.</p></div>
+    <div><h3>Quick Links</h3><p><a href="#about">About</a><br><a href="#products">Products</a><br><a href="#manufacturing">Manufacturing</a><br><a href="#contact">Contact</a></p></div>
+    <div><h3>Contact</h3><p>7205261048<br>Balarampur, Boudh, Odisha<br>livanbathsoap@gmail.com</p></div>
+  </div>
+  <div class="copy"><span>© 2025 LIVAN Bath Soap. All Rights Reserved.</span><span>Pure Care. Fresh You. 🌿</span></div>
+</div>
+</footer>
+</body>
+</html>
